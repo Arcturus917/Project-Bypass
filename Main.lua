@@ -88,7 +88,7 @@ end
 fadeTextThatMadeByChatGpt("Made By MrDodoMan 💪")
 fadeTextThatMadeByChatGpt("For The Bypass To Fully Work Please \nRead Your Clipboard")
 
-fadeTextThatMadeByChatGpt("🎉(")
+fadeTextThatMadeByChatGpt("🎉")
 
 fadeTextThatMadeByChatGpt("READ THE TUTORIAL")
 
