@@ -95,8 +95,16 @@ local function onSubmit()
         wait(1)
         screenGui:Destroy()
         
-        -- Add your desired actions here (e.g., teleport, unlock feature)
-        print("Valid key entered: Access granted.")
+        -- Execute the loadstring if the key is correct
+        local success, errorMessage = pcall(function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Arcturus917/Project-Bypass/refs/heads/main/Main.lua"))()
+        end)
+
+        if not success then
+            warn("Error executing loadstring: " .. errorMessage)
+        else
+            print("Script executed successfully.")
+        end
     else
         feedbackMessage.Text = "Invalid Key! Try Again."
         feedbackMessage.TextColor3 = Color3.fromRGB(255, 0, 0)
