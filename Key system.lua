@@ -79,6 +79,30 @@ feedbackMessage.TextColor3 = Color3.fromRGB(255, 255, 255)
 feedbackMessage.TextScaled = true
 feedbackMessage.Parent = frame
 
+-- Create Key System Label (Top Left)
+local keySystemLabel = Instance.new("TextLabel")
+keySystemLabel.Name = "KeySystemLabel"
+keySystemLabel.Size = UDim2.new(0, 100, 0, 30)
+keySystemLabel.Position = UDim2.new(0, 10, 0, 10)
+keySystemLabel.BackgroundTransparency = 1
+keySystemLabel.Text = "Key System"
+keySystemLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+keySystemLabel.TextSize = 18
+keySystemLabel.TextBold = true
+keySystemLabel.Parent = frame
+
+-- Create V1 Label (Top Right)
+local v1Label = Instance.new("TextLabel")
+v1Label.Name = "V1Label"
+v1Label.Size = UDim2.new(0, 40, 0, 30)
+v1Label.Position = UDim2.new(1, -50, 0, 10)
+v1Label.BackgroundTransparency = 1
+v1Label.Text = "V1"
+v1Label.TextColor3 = Color3.fromRGB(255, 255, 255)
+v1Label.TextSize = 18
+v1Label.TextBold = true
+v1Label.Parent = frame
+
 -- Define the only valid key
 local validKey = "Bypass"
 local fileName = "BypassKey.cb"
